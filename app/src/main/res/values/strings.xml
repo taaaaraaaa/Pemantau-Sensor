@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Latihan 13 Pemantau Sensor</string>
+    <string name="accel_x_label">Kiri-Kanan (X)</string>
+    <string name="accel_y_label">Atas-Bawah (Y)</string>
+    <string name="accel_z_label">Depan-Belakang (Z)</string>
+</resources>

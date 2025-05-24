@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latihan 13 Pemantau Sensor"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/accel_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer: Menunggu data..."
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/accel_info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menunggu data..."
+        android:textSize="14sp"
+        android:padding="4dp"
+        android:layout_marginBottom="4dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/accel_x_label"
+            android:textSize="12sp"/>
+        <ProgressBar
+            android:id="@+id/accel_x_progress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"
+            android:max="100"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+        <TextView
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/accel_y_label" android:textSize="12sp"/>
+        <ProgressBar
+            android:id="@+id/accel_y_progress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"
+            android:max="100"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/accel_z_label" android:textSize="12sp"/>
+        <ProgressBar
+            android:id="@+id/accel_z_progress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"
+            android:max="100"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/prox_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Proximity: Menunggu data..." android:textSize="18sp" android:padding="10dp" android:background="#E0E0E0" android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/prox_status_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Status: Menunggu data..." android:textSize="16sp" android:padding="10dp" android:drawablePadding="8dp" android:layout_marginBottom="16dp"/>
+    <TextView
+        android:id="@+id/gyro_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gyroscope: Menunggu data..." android:textSize="18sp" android:padding="10dp" android:background="#E0E0E0" android:layout_marginBottom="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/gyro_arrow" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_clockwise" android:layout_marginEnd="8dp"/>
+        <TextView
+            android:id="@+id/gyro_info_text" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Menunggu data..." android:textSize="14sp" android:padding="4dp"/>
+    </LinearLayout>
+</LinearLayout>
